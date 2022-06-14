@@ -8,7 +8,7 @@ my %stats;
 my $debug = 0;
 my $BUSCO_dir = 'BUSCO';
 my $BUSCO_pep = 'BUSCO_pep';
-my $telomere_report = 'reports';
+my $telomere_report = 'telomere_reports';
 my $read_map_stat = 'mapping_report';
 my $dir = shift || 'genomes';
 my @header;
