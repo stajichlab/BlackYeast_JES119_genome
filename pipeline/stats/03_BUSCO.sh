@@ -15,7 +15,7 @@ N=${SLURM_ARRAY_TASK_ID}
 if [ ! $CPU ]; then
      CPU=2
 fi
-
+export NUMEXPR_MAX_THREADS=$CPU
 if [ -z $N ]; then
     N=$1
     if [ -z $N ]; then
@@ -38,6 +38,6 @@ do
 	continue
     else
 	busco -m genome -l $LINEAGE -c $CPU -o ${ID} --out_path ${OUTFOLDER} --offline --augustus_species $SEED_SPECIES \
-	      --in $GENOMEFILE --download_path $BUSCO_LINEAGES
+	      --in $file --download_path $BUSCO_LINEAGES
     fi
 done
