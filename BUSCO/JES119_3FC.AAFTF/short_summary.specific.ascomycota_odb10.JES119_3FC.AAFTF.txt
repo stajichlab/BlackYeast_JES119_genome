@@ -1,0 +1,24 @@
+# BUSCO version is: 5.3.2 
+# The lineage dataset is: ascomycota_odb10 (Creation date: 2020-09-10, number of genomes: 365, number of BUSCOs: 1706)
+# Summarized benchmarking in BUSCO notation for file /bigdata/stajichlab/shared/projects/Black_yeasts/Asm_hybrid/JES_119.2022_06/genomes/JES119_3FC.AAFTF.fasta
+# BUSCO was run in mode: genome
+# Gene predictor used: augustus
+
+	***** Results: *****
+
+	C:93.5%[S:93.4%,D:0.1%],F:2.1%,M:4.4%,n:1706	   
+	1596	Complete BUSCOs (C)			   
+	1594	Complete and single-copy BUSCOs (S)	   
+	2	Complete and duplicated BUSCOs (D)	   
+	35	Fragmented BUSCOs (F)			   
+	75	Missing BUSCOs (M)			   
+	1706	Total BUSCO groups searched		   
+
+Dependencies and versions:
+	hmmsearch: 3.1
+	makeblastdb: 2.12.0+
+	tblastn: 2.12.0+
+	augustus: 3.4.0
+	gff2gbSmallDNA.pl: None
+	new_species.pl: None
+	etraining: None
